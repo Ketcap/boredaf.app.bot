@@ -19,7 +19,7 @@ server.post('/', (request, reply) => {
 
 try {
   const port = process.env.PORT || 8080;
-  server.listen(port, (err, address) => {
+  server.listen(port, '0.0.0.0', (err, address) => {
     console.log(`
     Server is at your service 
     ${address}

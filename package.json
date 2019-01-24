@@ -8,8 +8,9 @@
     "build-server": "babel -d ./build ./server -s",
     "build": "npm run clean && npm run build-server",
     "prod": "node ./build/index.js",
-    "start": "npm run dev",
-    "clean": "rm -rf build && mkdir build"
+    "start": "npm run prod",
+    "clean": "rm -rf build && mkdir build",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",

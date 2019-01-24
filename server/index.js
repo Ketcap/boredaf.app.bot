@@ -19,11 +19,13 @@ server.post('/', (request, reply) => {
 
 try {
   const port = process.env.PORT || 8080;
-  server.listen(port);
-  console.log(`
-      Server is at your service 
-      ${port} should be listening
-    `)
+  server.listen(port, (err, address) => {
+    console.log(`
+    Server is at your service 
+    ${address}
+    ${port} should be listening
+  `)
+  });
 } catch (err) {
   console.log(
     `ups`,

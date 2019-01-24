@@ -2,12 +2,13 @@
   "name": "BoredAFBot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server/index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node ./server/index.js",
     "build-server": "babel -d ./build ./server -s",
     "build": "npm run clean && npm run build-server",
-    "start": "node ./build/index.js",
+    "prod": "node ./build/index.js",
+    "start": "npm run dev",
     "clean": "rm -rf build && mkdir build"
   },
   "keywords": [],

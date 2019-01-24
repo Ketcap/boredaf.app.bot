@@ -9,8 +9,7 @@
     "build": "npm run build-server",
     "prod": "node ./build/index.js",
     "start": "npm run prod",
-    "clean": "rm -rf build && mkdir build",
-    "postinstall": "npm run build"
+    "clean": "rm -rf build && mkdir build"
   },
   "keywords": [],
   "author": "",
